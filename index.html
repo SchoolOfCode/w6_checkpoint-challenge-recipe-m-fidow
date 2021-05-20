@@ -4,20 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
-      </button>
-      <a id="recipe-label"></a>
-    </section>
+    <header>
+      <h1 class="section-heading">Welcome to the Recipe Finder!</h1>
+      <div class="input">
+        <input
+          aria-label="food-input"
+          id="food-input"
+          onchange="handleFoodChange()"
+        />
+        <button id="recipe-button" onclick="handleRecipeClick()">
+          Give me a recipe!
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="recipe-type-title"></h2>
+      </section>
+      <section id="recipe-section">
+        <!-- <div class="recipe-card"> -->
+        <!-- <div class="recipe-card-header">
+            <h2><a id="recipe-label">Recipe label</a></h2>
+            <p class="recipe-calories"><span>350</span> Calories</p>
+          </div>
+          <div class="recipe-card-image">
+            <img id="recipe-image" alt="" />
+          </div>
+          <div class="recipe-card-ingredients">
+            <ul>
+              <li>First ingredient</li>
+              <li>Second ingredient</li>
+              <li>Third ingredient</li>
+              <li>Fourth ingredient</li>
+              <li>Fifth ingredient</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- <div class="recipe-card">
+          <div class="recipe-card-header">
+            <h2><a id="recipe-label">Recipe label</a></h2>
+            <p class="recipe-calories"><span>350</span> Calories</p>
+          </div>
+          <div class="recipe-card-image">
+            <img id="recipe-image" alt="" />
+          </div>
+          <div class="recipe-card-ingredients">
+            <ul>
+              <li>First ingredient</li>
+              <li>Second ingredient</li>
+              <li>Third ingredient</li>
+              <li>Fourth ingredient</li>
+              <li>Fifth ingredient</li>
+            </ul>
+          </div>
+        </div>
+        <div class="recipe-card">
+          <div class="recipe-card-header">
+            <h2><a id="recipe-label">Recipe label</a></h2>
+            <p class="recipe-calories"><span>350</span> Calories</p>
+          </div>
+          <div class="recipe-card-image">
+            <img id="recipe-image" alt="" />
+          </div>
+          <div class="recipe-card-ingredients">
+            <ul>
+              <li>First ingredient</li>
+              <li>Second ingredient</li>
+              <li>Third ingredient</li>
+              <li>Fourth ingredient</li>
+              <li>Fifth ingredient</li>
+            </ul>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
     <script src="./main.js"></script>
   </body>
 </html>
